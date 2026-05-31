@@ -270,6 +270,59 @@ section {
 .offer h3 { color: var(--gold); }
 .offer p { color: var(--text); opacity: 0.8; font-size: 0.95rem; }
 
+/* ── RATES ── */
+.rates {
+  background: var(--space);
+}
+
+.rates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rate-card {
+  border: 1px solid var(--steel-light);
+  padding: 2.5rem 2rem;
+  background: var(--steel);
+  transition: border-color 0.3s;
+}
+
+.rate-card:hover {
+  border-color: var(--gold);
+}
+
+.rate-type {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--star);
+  margin-bottom: 1rem;
+}
+
+.rate-price {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.rate-detail {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .rates-grid { grid-template-columns: 1fr; }
+}
+
 /* ── BOOK ── */
 .book {
   background: var(--steel);
