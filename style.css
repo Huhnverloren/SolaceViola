@@ -1,3 +1,62 @@
+/* ── NAV ── */
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.5rem;
+  background: rgba(13, 17, 23, 0.93);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--steel-light);
+}
+
+.nav-brand {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.nav-brand:hover { color: var(--gold-bright); }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-links .nav-cta {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 0.42rem 1.1rem;
+}
+
+.nav-links .nav-cta:hover {
+  background: var(--gold);
+  color: var(--space);
+}
+
+@media (max-width: 768px) {
+  .site-nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 0.55rem; letter-spacing: 0.14em; }
+  .nav-links .nav-cta { padding: 0.35rem 0.8rem; }
+}
+
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -15,7 +74,7 @@
   --font-sans:   'Lato', system-ui, sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 68px; }
 
 body {
   background: var(--space);
