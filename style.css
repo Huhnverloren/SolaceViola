@@ -172,6 +172,61 @@ section {
 .about .text { padding: 1rem 0; }
 .about .text p { color: var(--text); opacity: 0.85; }
 
+/* ── CREDENTIALS ── */
+.credentials {
+  background: var(--steel);
+}
+
+.cred-summary {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  opacity: 1;
+  margin-bottom: 3rem;
+}
+
+.cred-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.cred-col .label {
+  border-bottom: 1px solid var(--steel-light);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.cred-item {
+  margin-bottom: 2rem;
+}
+
+.cred-org {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.cred-role {
+  font-size: 0.88rem;
+  color: var(--gold);
+  margin-top: 0.2rem;
+}
+
+.cred-date {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .cred-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
 /* ── LESSONS ── */
 .lessons {
   background: var(--space);
