@@ -300,12 +300,20 @@ section {
 
 .rates-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 3rem;
-  max-width: 640px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.rate-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.75;
+  text-align: center;
 }
 
 .rate-card {
